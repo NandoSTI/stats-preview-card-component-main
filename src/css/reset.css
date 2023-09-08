@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    height: 100%;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture {
+    display: block;
+    max-width: 100%;
+  }
+
+  p, h1 {
+    overflow-wrap: break-word;
+  }

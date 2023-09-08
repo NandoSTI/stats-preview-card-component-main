@@ -1,0 +1,112 @@
+:root {
+--main-background: hsl(233, 47%, 7%);
+--card-background: hsl(244, 38%, 16%);
+--accent: hsl(277, 64%, 61%);
+--main-heading-stats: hsl(0, 0%, 100%);
+--main-paragraph: hsla(0, 0%, 100%, 0.75);
+--transparent-stat-headings: hsla(0, 0%, 100%, 0.6);
+
+--ff-default: 'Inter', sans-serif;
+--ff-secondary: 'Lexend Deca', sans-serif;
+
+--fw-bold: 700;
+--fw-regular: 500;
+
+--fs: 1rem;
+}
+
+body {
+    background-color: var(--main-background);
+    font-family: var(--ff-default);
+    font-size: var(--fs);
+    color: var(--main-heading-stats);
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.875rem;
+    overflow: hidden;
+
+    border-radius: .4375rem;
+
+    width: 69.5rem;
+    height: 27.875rem;
+    background-color: var(--card-background);
+}
+
+.container .card .card_text {
+    padding: 4rem;
+}
+
+.container .card .card_text h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.container .card .card_text span {
+    color: var(--accent);
+}
+
+.container .card .card_text .paragraph {
+    font-family: var(--ff-secondary);
+    color: var(--transparent-stat-headings);
+    font-weight: var(--fw-regular);
+    font-size: 1rem;
+    line-height: 1.8rem;
+    margin-bottom: 5rem;
+}
+
+.container .card .card_stats {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container .card .card_stats .number {
+    font-family: var(--ff-default);
+    font-weight: var(--fw-bold);
+    font-size: 1.225rem;
+}
+
+.container .card .card_stats .description {
+    text-transform: uppercase;
+    color: var(--transparent-stat-headings);
+    font-size: .6rem;
+}
+
+@media(max-width: 600px) {
+    .container .card {
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .container .card .card_text {
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .container .card .card_text h1 {
+        font-size: 1.8rem;
+    }
+
+    .container .card .card_text .paragraph {
+        font-size: .9rem;
+    }
+
+    .container .card .card_stats {
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+}
+
