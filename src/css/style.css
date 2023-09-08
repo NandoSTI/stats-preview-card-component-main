@@ -50,8 +50,8 @@ body {
 
 .container .card .img .background {
     position: absolute;
-    width: 540px;
-    height: 446px;
+    width: 33.750rem;
+    height: 27.875rem;
     background-color: var(--accent);
     opacity: .6;
     top: 0;
