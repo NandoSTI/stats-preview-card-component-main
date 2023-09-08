@@ -30,8 +30,10 @@ body {
 }
 
 .container .card {
+
     display: grid;
     grid-template-columns: 1fr 1fr;
+    flex-direction: column-reverse;
     gap: 1.875rem;
     overflow: hidden;
 
@@ -80,13 +82,13 @@ body {
 .container .card .card_stats .description {
     text-transform: uppercase;
     color: var(--transparent-stat-headings);
-    font-size: .6rem;
+    font-size: .7rem;
 }
 
 @media(max-width: 600px) {
     .container .card {
-        margin: 1rem;
-        display: grid;
+        height: auto;
+        margin: 1.5rem;
         grid-template-columns: 1fr;
     }
 
@@ -107,6 +109,10 @@ body {
         justify-content: center;
         flex-direction: column;
         margin-bottom: 5rem;
+    }
+
+    .container .card .img {
+        grid-row: 1;
     }
 }
 
