@@ -44,6 +44,19 @@ body {
     background-color: var(--card-background);
 }
 
+.container .card .img {
+    position: relative;
+}
+
+.container .card .img .background {
+    position: absolute;
+    width: 540px;
+    height: 446px;
+    background-color: var(--accent);
+    opacity: .6;
+    top: 0;
+}
+
 .container .card .card_text {
     padding: 4rem;
 }
@@ -90,6 +103,10 @@ body {
         height: auto;
         margin: 1.5rem;
         grid-template-columns: 1fr;
+    }
+
+    .container .card .img .background {
+        height: 100%;
     }
 
     .container .card .card_text {
